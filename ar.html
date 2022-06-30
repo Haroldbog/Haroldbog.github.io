@@ -97,11 +97,13 @@ body {
   <a href="ar.html">AR</a>
 </div>
 
-    <a-scene>
+    <a-scene embedded arjs>
+      
+      <a-marker preset="hiro">
+        
         <a-gtlf-model position="0 0 -4" rotation="0 0 0" scale="0.1 0.1 0.1" src="./images/car.glb"></a-gtlf-model>
         
-        <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#d50035"></a-plane>
-        <a-sky color="#775533"></a-sky>
+        </a-marker>
         
         <-entity camera></a-entity>
     </a-scene>
